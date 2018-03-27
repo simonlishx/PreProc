@@ -1,0 +1,12 @@
+Package: PrePro
+Type: Package
+Title: Preprocess methods
+Version: 1.0.0
+Author: simonlishx
+Maintainer: simonlishx <simonlishx@163.com>
+Description: this packages integrate preprocess methods and glm
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Date: 2018-03-26
+Depends: R (>= 3.0.1)
