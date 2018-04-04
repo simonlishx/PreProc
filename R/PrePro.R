@@ -57,7 +57,19 @@ prePro <-function(A,B){
       TransA[,i] <- A[,i]
 
   }
-  return(as.data.frame(TransA))
+
+  TransA<- as.data.frame(TransA)
+
+  for(i in 1:length(B))
+  {
+    if(substr(B[i],1,4) %in% "disc")
+    {
+      TransA[,i] <- as.factor(TransA[,i])
+    }
+  }
+
+
+  return(TransA)
 
   dyn.unload("preproc.dll")
 }
