@@ -22,7 +22,7 @@ preProVec <-function(A,B){
 
   if(!is.character(B)) stop("B should be a string")
 
-  dyn.load("preproc.dll")
+  dyn.load(paste(getwd(),"preproc.dll",sep="/"))
 
   TransA <- rep(NA,length(A))
 
@@ -62,5 +62,5 @@ preProVec <-function(A,B){
 
   return(TransA)
 
-  dyn.unload("preproc.dll")
+  dyn.unload(paste(getwd(),"preproc.dll",sep="/"))
 }
