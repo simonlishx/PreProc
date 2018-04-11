@@ -10,3 +10,5 @@ Encoding: UTF-8
 LazyData: true
 Date: 2018-03-26
 Depends: R (>= 3.0.1)
+Built: R 3.4.0; x86_64-w64-mingw32; 2018-04-11 09:57:26 UTC; windows
+Archs: i386, x64
